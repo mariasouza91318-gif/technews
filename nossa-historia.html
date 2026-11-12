@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossa História - Portal Horizonte</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #0f172a; }
+        .font-serif-title { font-family: 'Playfair Display', serif; }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <!-- CABEÇALHO GLOBAL -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center space-x-2">
+                    <span class="w-8 h-8 bg-slate-900 text-white rounded-lg flex items-center justify-center font-bold text-lg">H</span>
+                    <span class="font-serif-title text-2xl font-bold text-slate-900 tracking-tight">Portal <span class="text-blue-600">Horizonte</span></span>
+                </a>
+
+                <!-- Navegação Desktop -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Início</a>
+                    <a href="nossa-historia.html" class="text-blue-600 font-semibold border-b-2 border-blue-600 pb-1">Nossa História</a>
+                    <a href="codigo-etica.html" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Código de Ética</a>
+                    <a href="contato.html" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Contato</a>
+                </nav>
+
+                <!-- Botão Menu Mobile -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" type="button" class="text-slate-600 hover:text-slate-900 focus:outline-none p-2" aria-label="Abrir menu">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 px-4 pt-2 pb-4 space-y-1">
+            <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-blue-600 hover:bg-slate-50">Início</a>
+            <a href="nossa-historia.html" class="block px-3 py-2 rounded-md text-base font-semibold text-blue-600 bg-blue-50">Nossa História</a>
+            <a href="codigo-etica.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-blue-600 hover:bg-slate-50">Código de Ética</a>
+            <a href="contato.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-blue-600 hover:bg-slate-50">Contato</a>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL: NOSSA HISTÓRIA -->
+    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <!-- Cabeçalho da Página -->
+        <div class="mb-12 border-b border-slate-200 pb-6">
+            <span class="text-blue-600 font-semibold text-xs uppercase tracking-widest">Institucional</span>
+            <h1 class="font-serif-title text-3xl sm:text-4xl font-bold text-slate-900 mt-1">Nossa História</h1>
+            <p class="text-slate-600 mt-2 max-w-3xl">Conheça a trajetória do Portal Horizonte, desde a nossa fundação até nos tornarmos referência em jornalismo digital independente.</p>
+        </div>
+
+        <!-- Banner de Métricas -->
+        <div class="bg-slate-900 text-white rounded-2xl p-8 sm:p-10 mb-14 shadow-md">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h2 class="font-serif-title text-2xl sm:text-3xl font-bold mb-4">Compromisso com a informação clara desde 2018</h2>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                        Nascemos da vontade de oferecer um noticiário livre de ruídos, direto ao ponto e respaldado por apuração rigorosa. Hoje, conectamos milhões de leitores aos fatos que moldam o Brasil e o mundo.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-slate-800/80 p-5 rounded-xl border border-slate-700">
+                        <span class="block text-3xl font-extrabold text-blue-400">8+</span>
+                        <span class="text-xs text-slate-300 uppercase tracking-wider mt-1 block">Anos de atuação</span>
+                    </div>
+                    <div class="bg-slate-800/80 p-5 rounded-xl border border-slate-700">
+                        <span class="block text-3xl font-extrabold text-emerald-400">4,5M</span>
+                        <span class="text-xs text-slate-300 uppercase tracking-wider mt-1 block">Leitores mensais</span>
+                    </div>
+                    <div class="bg-slate-800/80 p-5 rounded-xl border border-slate-700">
+                        <span class="block text-3xl font-extrabold text-amber-400">120+</span>
+                        <span class="text-xs text-slate-300 uppercase tracking-wider mt-1 block">Jornalistas e colunistas</span>
+                    </div>
+                    <div class="bg-slate-800/80 p-5 rounded-xl border border-slate-700">
+                        <span class="block text-3xl font-extrabold text-purple-400">100%</span>
+                        <span class="text-xs text-slate-300 uppercase tracking-wider mt-1 block">Independência editorial</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Linha do Tempo -->
+        <div class="mb-16">
+            <h2 class="font-serif-title text-2xl font-bold text-slate-900 mb-8">Marcos da Nossa Trajetória</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <span class="inline-block px-3 py-1 bg-blue-100 text-blue-800 font-bold text-xs rounded-full mb-3">2018</span>
+                    <h3 class="font-bold text-slate-900 text-lg mb-2">A Fundação</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Criado por três jornalistas em São Paulo com foco em reportagens aprofundadas de tecnologia e economia.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <span class="inline-block px-3 py-1 bg-blue-100 text-blue-800 font-bold text-xs rounded-full mb-3">2020</span>
+                    <h3 class="font-bold text-slate-900 text-lg mb-2">Núcleo de Checagem</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Inauguração da equipe dedicada exclusivamente à verificação de dados científicos e combate à desinformação.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <span class="inline-block px-3 py-1 bg-blue-100 text-blue-800 font-bold text-xs rounded-full mb-3">2023</span>
+                    <h3 class="font-bold text-slate-900 text-lg mb-2">Expansão Nacional</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Abertura de sucursais regionais e lançamento das editorias fixas de Cultura, Ciência e Esportes.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <span class="inline-block px-3 py-1 bg-blue-100 text-blue-800 font-bold text-xs rounded-full mb-3">2026</span>
+                    <h3 class="font-bold text-slate-900 text-lg mb-2">Novo Design System</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Renovação completa da experiência de leitura digital, priorizando acessibilidade, velocidade e clareza visual.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Missão, Visão e Valores -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-xl border-t-4 border-blue-600 shadow-sm">
+                <h3 class="font-bold text-slate-900 text-lg mb-2">Missão</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Informar com precisão, contexto e agilidade, fortalecendo o debate público e a cidadania por meio de fatos verificados.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl border-t-4 border-emerald-600 shadow-sm">
+                <h3 class="font-bold text-slate-900 text-lg mb-2">Visão</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Ser o portal de notícias mais confiável e acessível da língua portuguesa, reconhecido pela excelência ética.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl border-t-4 border-slate-900 shadow-sm">
+                <h3 class="font-bold text-slate-900 text-lg mb-2">Valores</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Rigor na apuração, pluralidade de vozes, transparência na correção de erros e respeito absoluto ao leitor.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- RODAPÉ GLOBAL -->
+    <footer class="bg-slate-900 text-slate-300 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 border-b border-slate-800 pb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <span class="w-7 h-7 bg-blue-600 text-white rounded flex items-center justify-center font-bold">H</span>
+                        <span class="font-serif-title text-xl font-bold text-white">Portal Horizonte</span>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Jornalismo independente, ágil e comprometido com a verdade dos fatos. Informação de qualidade para transformar o seu dia.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Navegação</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="hover:text-blue-400 transition-colors">Início</a></li>
+                        <li><a href="nossa-historia.html" class="hover:text-blue-400 transition-colors">Nossa História</a></li>
+                        <li><a href="codigo-etica.html" class="hover:text-blue-400 transition-colors">Código de Ética</a></li>
+                        <li><a href="contato.html" class="hover:text-blue-400 transition-colors">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Redação</h4>
+                    <p class="text-sm text-slate-400">Av. Paulista, 1500 - Bela Vista<br>São Paulo - SP, 01310-100</p>
+                    <p class="text-sm text-slate-400 mt-2">redacao@portalhorizonte.com.br</p>
+                </div>
+            </div>
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500">
+                <p>&copy; 2026 Portal Horizonte de Notícias. Todos os direitos reservados.</p>
+                <p class="mt-2 sm:mt-0">Desenvolvido com foco em clareza e precisão.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        if (btn && menu) {
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        }
+    </script>
+</body>
+</html>
